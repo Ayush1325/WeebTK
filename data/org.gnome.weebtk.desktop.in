@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=weebtk
+Exec=weebtk
+Icon=org.gnome.weebtk
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true

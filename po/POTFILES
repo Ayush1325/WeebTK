@@ -1,0 +1,4 @@
+data/org.gnome.weebtk.desktop.in
+data/org.gnome.weebtk.appdata.xml.in
+data/org.gnome.weebtk.gschema.xml
+src/window.ui
