@@ -4,6 +4,7 @@ use gtk::{gio, glib};
 
 use crate::config::VERSION;
 use crate::WeebtkWindow;
+use crate::APP_ID;
 
 mod imp {
     use super::*;
@@ -78,7 +79,7 @@ impl WeebtkApplication {
         let about = adw::AboutWindow::builder()
             .transient_for(&window)
             .application_name("weebtk")
-            .application_icon("org.gnome.weebtk")
+            .application_icon(APP_ID)
             .developer_name("Ayush Singh")
             .version(VERSION)
             .developers(vec!["Ayush Singh".into()])

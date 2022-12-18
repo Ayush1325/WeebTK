@@ -10,6 +10,8 @@ use gettextrs::{bind_textdomain_codeset, bindtextdomain, textdomain};
 use gtk::gio;
 use gtk::prelude::*;
 
+pub const APP_ID: &str = "org.gnome.weebtk";
+
 fn main() {
     // Set up gettext translations
     bindtextdomain(GETTEXT_PACKAGE, LOCALEDIR).expect("Unable to bind the text domain");
@@ -25,7 +27,7 @@ fn main() {
     // Create a new GtkApplication. The application manages our main loop,
     // application windows, integration with the window manager/compositor, and
     // desktop features such as file opening and single-instance applications.
-    let app = WeebtkApplication::new("org.gnome.weebtk", &gio::ApplicationFlags::empty());
+    let app = WeebtkApplication::new(APP_ID, &gio::ApplicationFlags::empty());
 
     // Run the application. This function will block until the application
     // exits. Upon return, we have our exit code to return to the shell. (This
