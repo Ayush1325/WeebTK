@@ -13,5 +13,9 @@
       <default>false</default>
       <summary>Default window maximized behaviour</summary>
     </key>
+    <key name="mal-secret" type="s">
+      <default>""</default>
+      <summary>My Anime List Secret</summary>
+    </key>
 	</schema>
 </schemalist>

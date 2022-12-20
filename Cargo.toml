@@ -7,6 +7,7 @@ edition = "2021"
 gettext-rs = { version = "0.7", features = ["gettext-system"] }
 gtk = { version = "0.5", package = "gtk4" }
 once_cell = "1.16.0"
+lib-mal = "0.5.1"
 
 [dependencies.adw]
 package = "libadwaita"

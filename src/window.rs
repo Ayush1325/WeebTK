@@ -16,7 +16,7 @@ mod imp {
         #[template_child]
         pub header_bar: TemplateChild<gtk::HeaderBar>,
         #[template_child]
-        pub label: TemplateChild<gtk::Label>,
+        pub main_stack: TemplateChild<gtk::Stack>,
         pub settings: OnceCell<Settings>,
     }
 
@@ -42,6 +42,12 @@ mod imp {
             let obj = self.obj();
             obj.setup_settings();
             obj.load_window_size();
+            let mal_secret = obj.settings().string("mal-secret");
+            if mal_secret.is_empty() {
+                self.main_stack.set_visible_child_name("login");
+            } else {
+                self.main_stack.set_visible_child_name("mylist");
+            }
         }
     }
     impl WidgetImpl for WeebtkWindow {}
@@ -115,3 +121,4 @@ impl WeebtkWindow {
         }
     }
 }
+

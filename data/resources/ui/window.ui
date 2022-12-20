@@ -19,12 +19,33 @@
           </object>
         </child>
         <child>
-          <object class="GtkLabel" id="label">
-            <property name="label">Hello, World!</property>
-            <property name="vexpand">true</property>
-            <style>
-              <class name="title-1"/>
-            </style>
+          <object class="GtkStack" id="main_stack">
+            <child>
+              <object class="GtkStackPage">
+                <property name="name">login</property>
+                <property name="title">login</property>
+                <property name="child">
+                  <object class="GtkButton">
+                    <child>
+                      <object class="GtkLabel">
+                        <property name="label">Login</property>
+                      </object>
+                    </child>
+                  </object>
+                </property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkStackPage">
+                <property name="name">mylist</property>
+                <property name="title">My List</property>
+                <property name="child">
+                  <object class="GtkLabel">
+                    <property name="label">My List</property>
+                  </object>
+                </property>
+              </object>
+            </child>
           </object>
         </child>
       </object>

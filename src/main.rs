@@ -1,3 +1,4 @@
+mod anime_item;
 mod application;
 mod config;
 mod window;
@@ -35,3 +36,4 @@ fn main() {
     // terminal.
     std::process::exit(app.run());
 }
+

@@ -2,6 +2,8 @@
 <gresources>
   <gresource prefix="/org/gnome/weebtk">
     <file preprocess="xml-stripblanks" alias="window.ui">resources/ui/window.ui</file>
+    <file preprocess="xml-stripblanks" alias="anime/anime-item.ui">resources/ui/anime-item.ui</file>
     <file preprocess="xml-stripblanks" alias="gtk/help-overlay.ui">resources/ui/help-overlay.ui</file>
   </gresource>
 </gresources>
+
